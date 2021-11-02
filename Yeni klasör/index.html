@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>minimal blog website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">AHMET AÇIKGÖZ</a>
+        <div class="menuToggle"></div>
+    </header>
+    <ul class="navigation">
+        <li><a href="#home" onclick="toggleMenu()">Anasayfa</a></li>
+        <li><a href="#about" onclick="toggleMenu()">Hakkımda</a></li>
+        <li><a href="#egitimler" onclick="toggleMenu()">Eğitimler</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">İletişim</a></li>
+    </ul>
+    <!--banner-->
+    <section class="banner" id="home">
+        <img src="25.jpg" class="cover" />
+        <div class="contentBx">
+            <h2>KİMYA ÖĞRETMENİ</h2>
+            <h4>AHMET AÇIKGÖZ</h4>
+            <a href="#about" class="btn">HAKKIMDA</a>
+        </div>
+    </section>
+
+    <!--about-->
+    <section class="about" id="about">
+        <div class="title">
+            <h2>HAKKIMDA</h2>
+            <br> <br> <br>
+        </div>
+        <div class="contentBx">
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit em ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolores nostrum explicabo amet odit quos placeat accusantium esse ullam rerum! Facilis excepturi ipsum minima adipisci pariatur voluptate voluptatem laboriosam placeat?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, velit expedita, animi quaerat perferendis, ea voluptatem tempore inventore saepe soluta aspernatur aut reprehenderit sunt architecto doloribus veritatis dolorum pariatur
+                    optio. <br /><br />Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi autem, laborum accusamus expedita id ratione eligendi placeat libero ipsum saepe ipsam, minus unde odit, quam cumque magni reiciendis.
+                    Necessitatibus, corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. m ipsum dolor, s doloribus Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita fugit tempora porro autem voluptatem at sed voluptate
+                    beatae suscipit? Suscipit incidunt unde dolorum, sequi officiis labore nisi minus vero at?
+                </p>
+            </div>
+            <div class="content">
+                <div class="imgBx"></div>
+                <img src="111.jpg" class="cover" />
+            </div>
+        </div>
+    </section>
+
+
+    <!--latest blog post-->
+    <section id="egitimler" style="background-color: #d3d2d2;">
+        <div class="title">
+            <h2>EĞİTİMLER</h2>
+        </div>
+
+        <div class="container">
+            <div class="col">
+                <h2>EĞİTİM KOÇU</h2>
+                <div class="caption">
+                    <p>Sınıf fark etmeksizin öğrenci ders,</p>
+                </div>
+                <img src="97.png">
+            </div>
+            <div class="col">
+                <h2>Online/Yüz Yüze <br> Özel Ders</h2>
+                <div class="caption">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dolorem explicabo numquam pariatur facilis aut ea soluta temporibus aperiam vitae, nulla accusantium eveniet expedita neque delectus quod mollitia voluptatem. Numquam?</p>
+
+                </div>
+                <img src="99.png">
+
+            </div>
+            <div class="col">
+                <h2>KONU ANLATIMLI DERS VİDEOLARI</h2>
+                <div class="caption">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dolorem explicabo numquam pariatur facilis aut ea soluta temporibus aperiam vitae, nulla accusantium eveniet expedita neque delectus quod mollitia voluptatem. Numquam?</p>
+
+                </div>
+                <img src="98.png">
+
+            </div>
+
+
+
+            <div class="slider-card">
+                <div class="slide-first" onclick="slideControl()" onmouseover="slidMouse()" onmouseout="slideMouseOut()">
+                    <div class="contains"></div>
+                    <div class="contain">
+
+
+                    </div>
+                </div>
+                <div class="slide-second" onclick="slide2Control()"></div>
+                <div class="slide-thirt" onclick="slide3Control()"></div>
+                <div class="slide-four" onclick="slide4Control()"></div>
+            </div>
+    </section>
+
+
+    <!--contact-->
+    <div id="contacts" style="margin-bottom: 0%;"></div>
+
+    <section class="contact" id="contact">
+
+        <div class="title">
+            <h2 style="margin-bottom: 25px;">İletişim</h2>
+            <br>
+            <div class="main-div">
+                <h1>BİZE ULAŞIN</h1>
+                <div class="box">
+                    <i class="fas fa-phone about-icon"></i> +000 0000 00000
+                </div>
+                <div class="box">
+                    <i class="fas fa-mail-bulk about-icon"></i> ceren.madenli34@gmail.com
+                </div>
+                <div class="box">
+                    <i class="fas fa-map-marked-alt about-icon"></i> Adres
+                </div>
+                <div class="box">
+                    <i class="fas fa-fax about-icon"></i> +000 00000 00000
+                </div>
+                <!-- <a href="/HTML DERSLERİ/Contact/main.html">
+                    <input type="button" value="Önceki sayfaya git" class="btn">
+                </a> -->
+            </div>
+        </div>
+
+    </section>
+
+    <!--footer-->
+    <footer>
+
+
+
+        <a href="#" class="logo">Ahmet Açıkgöz</a>
+        <ul class="footerMenu">
+            <li><a href="#home">Anasayfa</a></li>
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#egitimler">EĞİTİMLER</a></li>
+            <li><a href="#ContactAbout">İletişim</a></li>
+        </ul>
+        <br>
+        <div class="social-media" style="margin-right: -20%;">
+            <div class="youtube">
+                <a href="https://www.instagram.com/crnmdnl/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
+            <div class="twitter">
+                <a href="https://www.instagram.com/crnmdnl/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/crnmdnl/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="gmail">
+                <a href="#contacts"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <p class="copyrightText">Copyright © 2021. Tüm hakları saklıdır.</p>
+
+
+    </footer>
+    <script>
+        const slideFirst = document.querySelector(".slide-first");
+        const slideSecond = document.querySelector(".slide-second");
+        const slideThirt = document.querySelector(".slide-thirt");
+        const slideFour = document.querySelector(".slide-four");
+        const contain = document.querySelector(".contain");
+        const contains = document.querySelector(".contains");
+
+        function slidMouse() {
+            contain.classList.remove("contain");
+            contain.classList.toggle("contain-active");
+
+            contains.classList.remove('contains');
+            contains.classList.toggle('contains-filter')
+        }
+
+        function slideMouseOut() {
+            contain.classList.remove("contain-active");
+            contain.classList.toggle("contain");
+
+            contains.classList.remove('contains-filter');
+            contains.classList.toggle('contains')
+        }
+
+        slideFirst.onclick = function() {
+            slideFirst.classList.remove("slide-first");
+            slideFirst.classList.toggle("slide-first-active");
+        };
+        slideSecond.onclick = function() {
+            slideFirst.classList.remove("slide-first");
+            slideFirst.classList.toggle("slide-first-active");
+
+            slideSecond.classList.remove("slide-second");
+            slideSecond.classList.toggle("slide-second-active");
+        };
+        slideThirt.onclick = function() {
+            slideSecond.classList.remove("slide-second-active");
+            slideSecond.classList.toggle("slide-second");
+
+            slideThirt.classList.toggle("slide-thirt");
+            slideThirt.classList.toggle("slide-thirt-active");
+        };
+        slideFour.onclick = function() {
+            slideThirt.classList.remove("slide-thirt-active");
+            slideThirt.classList.toggle("slide-thirt");
+
+            slideFour.classList.toggle("slide-four");
+            slideFour.classList.toggle("slide-four-active");
+        };
+
+        const menuToggle = document.querySelector(".menuToggle");
+        const navigation = document.querySelector(".navigation");
+
+        menuToggle.onclick = function() {
+            menuToggle.classList.toggle("active");
+            navigation.classList.toggle("active");
+        };
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        //now, we will fix navigation issue.... menu close after clicked any link
+        function toggleMenu() {
+            menuToggle.classList.remove("active");
+            navigation.classList.remove("active");
+        }
+    </script>
+    <script src="https://use.fontawesome.com/b59a6c2892.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.kutu{
+    width: 700px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .hep{
+    text-align: center;
+    background: rgb(235, 238, 238);
+  
+  }
+  
+  .buton1{
+    width: 250px;
+    height: 40px;
+    background: rgb(189, 40, 40);
+    color: aliceblue;
+    border-radius: 10px;
+  }
+  .buton2{
+    width: 150px;
+    height: 40px;
+    background: rgb(189, 40, 40);
+    color: aliceblue;
+    border-radius: 10px;
+    
+  }
+  .sayfa{
+    color: aliceblue;
+    font-size: 17px;
+    text-decoration: none;
+  }
